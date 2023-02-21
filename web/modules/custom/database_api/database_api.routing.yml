@@ -1,0 +1,8 @@
+database_api.example:
+  path: '/database-api/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\database_api\Controller\DatabaseApiController::build'
+  requirements:
+    _permission: 'access content'
+

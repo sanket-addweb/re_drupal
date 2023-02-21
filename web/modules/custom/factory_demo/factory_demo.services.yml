@@ -1,0 +1,24 @@
+services:
+  factory_demo.CheckEmail:
+    class: Drupal\factory_demo\Services\myServiceCheck
+    arguments: ['@service_container']
+
+  factory_demo.checkUserEmail:
+    class: Drupal\factory_demo\Services\AssignRole
+
+  factory_demo.SetRoleService:
+    class: Drupal\factory_demo\Services\SetRoleService
+    arguments: ['@factory_demo.adminRole','@factory_demo.editorRole','@service_container']
+  
+  factory_demo.editorRole:
+    class: Drupal\factory_demo\AddRolesByClass\EditorRole
+    # arguments: ['@service_container']
+
+  factory_demo.adminRole:
+    class: Drupal\factory_demo\AddRolesByClass\adminRole
+    # arguments: ['@service_container'] If you uncomment this then make sure that your adminRole construct() function implement that class and argument, i.e __construct(containerInterface $container)
+
+  factory_demo.roleservices:
+    class: Drupal\factory_demo\Roleservices
+    arguments: ['@current_user', '@class_loader']
+

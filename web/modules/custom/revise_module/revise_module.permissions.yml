@@ -1,0 +1,4 @@
+administer revise_module configuration:
+  title: 'Administer revise_module configuration'
+  description: 'Optional description.'
+  restrict access: true

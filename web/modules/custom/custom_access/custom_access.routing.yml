@@ -1,0 +1,20 @@
+custom_access.example:
+  path: '/custom-access/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\custom_access\Controller\CustomAccessController::build'
+  requirements:
+    # _permission: 'access content'
+    # _custom_access: 'Drupal\custom_access\Access\CustomAccessServices::access'
+    # _permission: 'allow custom access'
+    _hello_world_access_check: 'TRUE' #Through services tags name 'applies to:_hello_world_access_check'
+    # _role: administrator + content_editor
+
+custom_access.settings_form:
+  path: '/admin/config/system/custom-access'
+  defaults:
+    _title: 'custom_access settings'
+    _form: 'Drupal\custom_access\Form\SettingsForm'
+  # requirements:
+  #   _permission: 'administer custom_access configuration'
+  

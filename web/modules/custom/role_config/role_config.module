@@ -1,0 +1,50 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for role_config module.
+ */
+
+/**
+ * Implements hook_mail().
+ */
+
+function role_config_mail($key, &$message, $params){
+	$options= array(
+		'langcode' => $message ['langcode'],
+	);
+	// dump($key);//works fine
+	// dump($message);//works fine
+	// dump($params);//works fine
+	// exit;
+
+	//For specific message and if some specific added
+		// switch($key){
+		// 	//For specific mail
+		// 	case 'assign_editor';
+		// 		$message['from'] = \Drupal::config('system.site')->get('mail');
+		// 		$message['subject'] = t('Role assign : @role_here', array('@role_here' => $params['role']), $options);
+		// 		$message['body'][] = $params['message'];
+		// 		break;
+
+		// 	case 'assign_admin';
+		// 		$message['from'] = \Drupal::config('system.site')->get('mail');
+		// 		$message['subject'] = t('Role assign : @role_here', array('@role_here' => $params['role']), $options);
+		// 		$message['body'][] = $params['message'];
+		// 		break;
+
+		// 	case 'assign_moderator';
+		// 		$message['from'] = \Drupal::config('system.site')->get('mail');
+		// 		$message['subject'] = t('Role assign : @role_here', array('@role_here' => $params['role']), $options);
+		// 		$message['body'][] = $params['message'];
+		// 		break;
+		// }
+
+	if($key){
+		// dump($key);
+		// exit;
+		$message['from'] = \Drupal::config('system.site')->get('mail');
+		$message['subject'] = t('Role assign : @role_here', array('@role_here' => $params['role']), $options);
+		$message['body'][] = $params['message'];
+	}
+}

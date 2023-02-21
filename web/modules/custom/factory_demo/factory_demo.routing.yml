@@ -1,0 +1,23 @@
+factory_demo.example:
+  path: '/factory-demo/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\factory_demo\Controller\FactoryDemoController::build'
+  requirements:
+    _permission: 'access content'
+
+factory_demo.setRoleByEmail:
+  path: '/factory-demo/setRole'
+  defaults:
+    _title: 'Visit url and set Role'
+    _controller: '\Drupal\factory_demo\Controller\SetRoleByEmailController::build'
+  requirements:
+    _permission: 'access content'
+
+factory_demo.user_login:
+  path: '/factory-demo/user-login'
+  defaults:
+    _title: 'User login'
+    _form: 'Drupal\factory_demo\Form\UserLoginForm'
+  requirements:
+    _permission: 'access content'

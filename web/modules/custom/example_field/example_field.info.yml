@@ -1,0 +1,5 @@
+name: example_field
+type: module
+description: This is provide custom field type, field formattor and field widget
+package: custom module
+core_version_requirement: ^9 || ^10

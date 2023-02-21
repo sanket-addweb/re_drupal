@@ -1,0 +1,21 @@
+services:
+  role_config.editorExample:
+    class: Drupal\role_config\Services\RoleEditorServices
+    arguments: ['@role_config.AddRoleMailExample']
+
+  role_config.adminExample:
+    class: Drupal\role_config\Services\RoleAdminServices
+    arguments: ['@role_config.AddRoleMailExample']
+
+  role_config.moderatorExample:
+    class: Drupal\role_config\Services\RoleModeratorServices
+    arguments: ['@service_container', '@role_config.AddRoleMailExample']
+  
+  role_config.AddRoleMailExample:
+    class: Drupal\role_config\Services\AddRoleMail
+    # arguments: ['@service_container']
+    # arguments: ['@role_config.editorExample']
+    
+  role_config.mailservice2:
+    class: Drupal\role_config\Mailservice2
+    arguments: ['@config.factory', '@url_generator']

@@ -1,0 +1,40 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for demo_form module.
+ */
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+
+// function demo_form_form_salutation_configuration_form_
+// alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state,
+// $form_id) {
+//  // Perform alterations.
+// }
+
+
+function demo_form_form_customer_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state,$form_id) {
+ 	// Perform alterations.
+ 	// dump($form);
+ 	$form['name'] = [
+    '#type' => 'textfield',
+    '#title' => "Enter Name here",
+    '#required' => false,
+    '#attributes' =>  [
+			'placeholder' => 'Enter your name',
+    ],
+	];
+	return $form;
+}
+
+
+function demo_form_form_comment_comment_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state,$form_id){
+	// dump($form);
+	// exit;
+	$form['actions']['submit']['#value'] = 'Save Now';
+	// return $form;
+	$form['actions']['preview']['#weight'] = 4;//changes 10 to 4 and Preview now before save btn, bcz save btn weight is 5
+}

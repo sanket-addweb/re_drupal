@@ -1,0 +1,14 @@
+uuid: 80acbc9f-0c55-4c4d-86b1-65bc26f13e88
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.invester
+  module:
+    - user
+id: user_add_role_action.invester
+label: 'Add the invester role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: invester

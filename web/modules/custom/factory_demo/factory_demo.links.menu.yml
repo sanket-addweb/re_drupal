@@ -1,0 +1,5 @@
+factory_demo.hitAnd_AddRole:
+  route_name: factory_demo.setRoleByEmail
+  title: 'Hit and add role'
+  menu_name: main
+  weight: 9

@@ -1,0 +1,3 @@
+services:
+  revise_module.helloServices:
+    class: Drupal\revise_module\Services\HelloService

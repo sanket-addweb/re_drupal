@@ -1,0 +1,8 @@
+# Schema for the configuration files of the revise_module module.
+revise_module.settings:
+  type: config_object
+  label: 'revise_module settings'
+  mapping:
+    example:
+      type: string
+      label: 'Example'

@@ -1,0 +1,9 @@
+uuid: 2e8cdc10-730d-40f4-a69d-0c43d310fb7f
+langcode: en
+status: true
+dependencies: {  }
+id: invester
+label: Invester
+weight: 5
+is_admin: null
+permissions: {  }
