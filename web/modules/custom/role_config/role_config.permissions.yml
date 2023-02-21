@@ -1,0 +1,4 @@
+administer role_config configuration:
+  title: 'Administer role_config configuration'
+  description: 'Optional description.'
+  restrict access: true

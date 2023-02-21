@@ -1,0 +1,19 @@
+uuid: 8ff8917e-385e-43ea-8ae1-e3a084ae15ac
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_demo_field_formattor
+field_name: field_demo_field_formattor
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

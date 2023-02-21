@@ -1,0 +1,5 @@
+name: role_config
+type: module
+description: This is provice config file for roles
+package: Custom modules
+core_version_requirement: ^9 || ^10

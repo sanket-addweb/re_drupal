@@ -1,0 +1,21 @@
+uuid: 8ffe72bf-7866-4514-8c25-eb03d2ad6a5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_widget_summary_rgb
+    - node.type.article
+  module:
+    - example_field
+id: node.article.field_widget_summary_rgb
+field_name: field_widget_summary_rgb
+entity_type: node
+bundle: article
+label: 'widget summary rgb'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: example_fieldtype

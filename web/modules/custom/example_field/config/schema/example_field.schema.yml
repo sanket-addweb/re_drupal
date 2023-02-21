@@ -1,0 +1,24 @@
+field.value.example_fieldtype:
+  type: mapping
+  label: Default value
+  mapping:
+    value:
+      type: label
+      label: Value
+
+# field.widget.settings.[WIDGET ID]:
+#   type: mapping
+#   label: 'WIDGET NAME widget settings'
+#   mapping:
+#     size:
+#       type: integer
+#       label: 'Size'
+
+
+field.widget.settings.example_field_widget:
+  type: mapping
+  label: 'Example widget settings'
+  mapping:
+    size:
+      type: integer
+      label: 'Size'

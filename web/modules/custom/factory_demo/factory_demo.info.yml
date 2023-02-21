@@ -1,0 +1,5 @@
+name: factory_demo
+type: module
+description: This is module provide factory design pattern
+package: Custom module
+core_version_requirement: ^9 || ^10

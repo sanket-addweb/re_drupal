@@ -1,0 +1,14 @@
+
+demo_form.customerForm:
+  title: 'Customer Form'
+  description: 'Create customer by add their details'
+  route_name: 'demo_form.customerform'
+  weight: 8
+  menu_name: main
+
+demo_form.CustomerList:
+  title: 'Customer list'
+  description: 'See the list of customer'
+  route_name: "demo_form.customerList"
+  weight: 9
+  menu_name: main

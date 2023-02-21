@@ -1,0 +1,19 @@
+uuid: 9164cb46-4eeb-4eb5-90e2-a4dc952ff28e
+langcode: en
+status: true
+dependencies:
+  module:
+    - example_field
+    - node
+id: node.field_widget_summary_rgb
+field_name: field_widget_summary_rgb
+entity_type: node
+type: example_fieldtype
+settings: {  }
+module: example_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

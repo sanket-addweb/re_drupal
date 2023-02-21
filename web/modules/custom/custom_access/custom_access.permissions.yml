@@ -1,0 +1,8 @@
+administer custom_access configuration:
+  title: 'Administer custom_access configuration'
+  description: 'Optional description.'
+  restrict access: true
+
+allow custom access:
+  title: 'Give Custom Access'
+  description: 'Give custom access for demo checking'

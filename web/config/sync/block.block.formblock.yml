@@ -1,0 +1,20 @@
+uuid: ffd135d7-3f6f-4737-96a4-0b8728304071
+langcode: en
+status: true
+dependencies:
+  module:
+    - revise_module
+  theme:
+    - bartik
+id: formblock
+theme: bartik
+region: sidebar_first
+weight: -5
+provider: null
+plugin: form_block
+settings:
+  id: form_block
+  label: 'form block'
+  label_display: '0'
+  provider: revise_module
+visibility: {  }

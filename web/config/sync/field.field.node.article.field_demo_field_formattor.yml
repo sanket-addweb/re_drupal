@@ -1,0 +1,21 @@
+uuid: e924c6c0-2b91-4cd0-ae29-35028fa7e569
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_demo_field_formattor
+    - node.type.article
+  module:
+    - text
+id: node.article.field_demo_field_formattor
+field_name: field_demo_field_formattor
+entity_type: node
+bundle: article
+label: 'Demo field formattor'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

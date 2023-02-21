@@ -1,0 +1,21 @@
+uuid: 217f461a-9d1a-4702-901d-91b39c613e90
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_check_widget_demo
+    - node.type.article
+  module:
+    - text
+id: node.article.field_check_widget_demo
+field_name: field_check_widget_demo
+entity_type: node
+bundle: article
+label: 'Check widget demo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

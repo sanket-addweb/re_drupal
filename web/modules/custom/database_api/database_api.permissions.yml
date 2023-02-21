@@ -1,0 +1,4 @@
+administer database_api configuration:
+  title: 'Administer database_api configuration'
+  description: 'Optional description.'
+  restrict access: true

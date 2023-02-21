@@ -1,0 +1,15 @@
+role_config.example:
+  path: '/role-config/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\role_config\Controller\RoleConfigController::build'
+  requirements:
+    _permission: 'access content'
+
+role_config.roleContent:
+  path: '/role-config/role-factory'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\role_config\Controller\RoleContentController::getRoleFactory'
+  requirements:
+    _permission: 'access content'

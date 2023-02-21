@@ -1,0 +1,4 @@
+administer factory_demo configuration:
+  title: 'Administer factory_demo configuration'
+  description: 'Optional description.'
+  restrict access: true

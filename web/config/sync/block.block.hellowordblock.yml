@@ -1,0 +1,20 @@
+uuid: 1c312059-13e1-45ed-b1f9-eba977b7c6cd
+langcode: en
+status: true
+dependencies:
+  module:
+    - revise_module
+  theme:
+    - bartik
+id: hellowordblock
+theme: bartik
+region: sidebar_first
+weight: -6
+provider: null
+plugin: revise_module_hello_block
+settings:
+  id: revise_module_hello_block
+  label: 'Hello word block'
+  label_display: '0'
+  provider: revise_module
+visibility: {  }

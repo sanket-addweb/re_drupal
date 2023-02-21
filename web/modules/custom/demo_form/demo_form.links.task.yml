@@ -1,0 +1,16 @@
+demo_form.customerList:
+  route_name: demo_form.customerList 
+  title: 'Settings'
+  base_route: demo_form.customerList
+
+# player_details.createPlayer:
+#   route_name: player_details.createPlayer
+#   title: 'Create Player tab'
+#   base_route: player_details.getPlayer
+#   weight: 100
+
+# demo_form.customerListTask: # The second plugin ID
+#   route_name: demo_form.customerList
+#   title: 'Third party services'
+#   base_route: demo_form.customerform
+#   # weight: 100

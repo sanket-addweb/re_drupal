@@ -1,0 +1,5 @@
+name: revise_module
+type: module
+description: This module provide all the code for revision
+package: Custom module
+core_version_requirement: ^9 || ^10

@@ -1,0 +1,6 @@
+role_config.addRoleBysecond:
+  route_name: role_config.roleContent
+  title: 'Add Role by 2nd method'
+  menu_name: main
+  weight: 9
+  

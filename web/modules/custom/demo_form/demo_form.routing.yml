@@ -1,0 +1,41 @@
+demo_form.example:
+  path: '/demo-form/customers'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\demo_form\Controller\DemoFormController::build'
+  requirements:
+    _permission: 'access content'
+
+demo_form.customerform:
+  path: '/customer-form/register'
+  defaults: 
+    _title: 'Customer Form'
+    _form: '\Drupal\demo_form\Form\CustomerForm'
+  requirements:
+    _permission: 'access content'
+
+demo_form.customerList:
+  path: '/demo-form/customers-list'
+  defaults:
+    _title: 'Customers List'
+    _controller: '\Drupal\demo_form\Controller\customerController::customerList'
+  requirements:
+    _permission: 'access content'
+
+customer_module.deleteCustomer:
+  path: '/demo-form/delete-customer/{id_here}'
+  defaults:
+    _controller: 'Drupal\demo_form\Controller\customerController::deleteCustomer'
+  requirements:
+    _permission: 'access content'
+
+# Here I pest path url from site as i got when I hover that edit link
+# So don't make as per we write in code in <a heref='edit-customer/id'>edit</a>
+demo_form.updateCustomer:
+  path: '/demo-form/edit-customer/{id_here}'
+  defaults: 
+    _title: 'Customer Form'
+    _form: '\Drupal\demo_form\Form\UpdateCustomer'
+  requirements:
+    _permission: 'access content'
+

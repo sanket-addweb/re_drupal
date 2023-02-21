@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for factory_demo module.
+ */
+
+use Drupal\user\UserInterface;
+function factory_demo_user_presave(UserInterface $account) {
+	if ($account->isNew()) {
+		// Do stuff for newly registered users.
+
+		// dump($user);//works
+		$email= $account->getInitialEmail();
+		// dump($email);//works
+
+		$reverse = strrev($email);
+		$contents = explode('@', $reverse);
+		$emailExt = strrev($contents[0]);
+
+		if($emailExt=='addwebsolution.in'){
+			//Administrator
+			$addRole = $account->addRole('administrator');
+			dump($addRole);
+			$account->save();
+		} 
+		elseif($emailExt == 'gmail.com'){
+			//content_editor
+			$addRole = $account->addRole('content_editor');
+			dump($addRole);
+			$account->save();
+		}
+		else{
+			$addRole = $account->addRole('moderator');
+			$account->save();
+		}
+		// exit;
+	}
+}

@@ -1,0 +1,8 @@
+example_field.example:
+  path: '/example-field/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\example_field\Controller\ExampleFieldController::build'
+  requirements:
+    _permission: 'access content'
+

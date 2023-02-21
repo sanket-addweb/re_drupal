@@ -1,0 +1,4 @@
+administer example_field configuration:
+  title: 'Administer example_field configuration'
+  description: 'Optional description.'
+  restrict access: true

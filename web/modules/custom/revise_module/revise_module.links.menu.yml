@@ -1,0 +1,14 @@
+revise_module.settings_form:
+  title: 'revise_module'
+  description: 'Configure revise_module.'
+  parent: system.admin_config_system
+  route_name: revise_module.settings_form
+  weight: 10
+
+revise_module.formDataDisplay:
+  title: 'Customer form2'
+  route_name: revise_module.formDataDisplay
+  description: 'By twig and hook_theme'
+  menu_name: main
+  weight: 99
+
