@@ -21,10 +21,10 @@ class AddRoleMail{
 		// dump($result);
 	
 		if($result['result'] !== true){
-			\Drupal::messenger()->addMessage(t('There was problem in sending mail'),'error');
+		\Drupal::messenger()->addMessage(t('There was problem in sending mail'),'error');
 		}
 		else{
-			\Drupal::messenger()->addMessage(t('Mail send successfully by mail services'),'status');
+		\Drupal::messenger()->addMessage(t('Mail send successfully by mail services'),'status');
 		}
 
 	}

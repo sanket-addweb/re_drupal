@@ -116,11 +116,9 @@ class DatabaseApiController extends ControllerBase {
 
     dump($results1[0]->data);
 
-    //Join query start
-
     $result122 = $database->query("SELECT * FROM {players} p JOIN
     {teams} t ON t.[id] = p.[team_id] WHERE p.[id] = :id", [':id'
-    => 2]); 
+    => 1]); 
 
     dump($result122);
     $data122 = [];
@@ -135,61 +133,6 @@ class DatabaseApiController extends ControllerBase {
     }
     dump($data122);
 
-    $data_join = [];
-    $result_join = $database->select('players', 'p')
-      ->fields('p')
-      ->join('teams', 't', 't.id = p.team_id');
-	  $result_join->addField('t', 'name', 'team_name')
-	    // ->addField('t', 'description', 'team_desc')
-	    // ->condition('t.name', 'Cricket team')
-      ->execute();
-    foreach($result_join as $row){
-      $data_join [] = [
-        $row -> name,
-        $row -> id,
-        // $row -> team_name,
-        // $row -> team_desc,
-      ];
-    }
-    dump($data_join);
-    print_r('success in join query builder');
-
-    //Join query over
-
-
-    print_r('success');
-
-    $data_query = [];
-    $result12 = $database->select('players', 'p')
-      ->fields('p')
-      ->execute();
-    
-    foreach($result12 as $row){
-      $data_query[] = [
-        $row->name,
-        $row->id,
-        $row->data,
-      ];
-    }
-    dump($data_query);
-    print_r('success');
-
-    //Now using query alter
-    $data_query_alter = [];
-    $result_query_alter = $database->select('players', 'p')
-      ->fields('p')
-      ->addTag('player_query')
-      ->execute();
-    
-    foreach($result_query_alter as $row){
-      $data_query_alter [] = [
-        $row -> name,
-        $row -> id,
-        $row -> team_name,
-        $row -> team_desc,
-      ];
-    }
-    dump($data_query_alter);
     print_r('success');
     exit;
 

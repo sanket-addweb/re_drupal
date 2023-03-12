@@ -4,17 +4,3 @@
  * @file
  * Primary module hooks for database_api module.
  */
-
-/**
- * Implements hook_query_alter().
- */
-function database_api_query_alter(Drupal\Core\Database\Query\AlterableInterface $query) {
-	if (!$query->hasTag('player_query')) {
-		return;
-	}
- 	// Alter query
-	$query->join('teams', 't', 't.id = p.team_id');
-	$query->addField('t', 'name', 'team_name');
-	$query->addField('t', 'description', 'team_desc');
-	$query->condition('t.name', 'Cricket team');
-}
