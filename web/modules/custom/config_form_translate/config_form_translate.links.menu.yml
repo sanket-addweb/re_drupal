@@ -1,0 +1,6 @@
+config_form_translate.settings_form:
+  title: 'Config Form demo'
+  description: 'Configure config_form_translate.'
+  parent: system.admin_config_system
+  route_name: config_form_translate.settings_form
+  weight: 10

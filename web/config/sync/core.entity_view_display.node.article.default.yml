@@ -89,3 +89,4 @@ content:
     region: content
 hidden:
   field_widget_summary_rgb: true
+  langcode: true

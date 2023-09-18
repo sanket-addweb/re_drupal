@@ -1,0 +1,8 @@
+# Schema for the configuration files of the config_form_translate module.
+config_form_translate.adminsettings:
+  type: config_object
+  label: 'config_form_translate settings'
+  mapping:
+    example:
+      type: string
+      label: 'Example'

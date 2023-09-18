@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.article.field_demo_field_formattor
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
+    - field.field.node.article.field_widget_summary_rgb
     - image.style.thumbnail
     - node.type.article
   module:
@@ -87,6 +88,13 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   path:
     type: path
     weight: 9
@@ -132,4 +140,5 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_widget_summary_rgb: true

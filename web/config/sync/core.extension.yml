@@ -12,8 +12,12 @@ module:
   color: 0
   comment: 0
   config: 0
+  config_translation: 0
+  config_translation_example: 0
   contact: 0
   contextual: 0
+  custom_access: 0
+  database_api: 0
   datetime: 0
   dblog: 0
   demo_form: 0
@@ -28,7 +32,9 @@ module:
   help: 0
   history: 0
   image: 0
+  language: 0
   link: 0
+  locale: 0
   mailgun: 0
   maillog: 0
   mailsystem: 0

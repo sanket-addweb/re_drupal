@@ -1,0 +1,8 @@
+name: config_form_translate
+type: module
+description: Provide translation of custom config form.
+package: Custom
+core_version_requirement: ^9 || ^10
+dependencies:
+  - config_translation
+  - locale

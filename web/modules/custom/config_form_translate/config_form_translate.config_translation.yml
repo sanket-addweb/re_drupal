@@ -1,0 +1,5 @@
+config_form_translate.settings_form:
+  title: 'Configuration translation example settings'
+  base_route_name: config_form_translate.settings_form
+  names:
+    - 'config_form_translate.adminsettings'

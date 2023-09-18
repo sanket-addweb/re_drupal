@@ -1,0 +1,8 @@
+config_form_translate.settings_form:
+  path: '/admin/config/system/config-form-translate'
+  defaults:
+    _title: 'config_form_translate settings'
+    _form: 'Drupal\config_form_translate\Form\SettingsForm'
+  requirements:
+    _permission: 'administer config_form_translate configuration'
+    # administer site configuration
